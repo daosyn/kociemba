@@ -1,0 +1,2 @@
+# kociemba
+This package will expose a function that takes in the state of a cube as a string and returns a solution. The two-phase algorithm devised by [Herbert Kociemba](http://kociemba.org/twophase.htm) is especially useful not only for finding optimal solutions but for generating a randomized scramble. The original intention for creating this port is to be able to utilize it for generating scrambles for [cuterm](https://github.com/daosyn/cuterm) by calling the `Solve` function and displaying the solution in reverse as the generated scramble.
