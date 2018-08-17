@@ -1,7 +1,35 @@
 package kociemba
 
 type (
+    Corner int
+    Edge int
     Facelet int
+)
+
+const (
+    URF Corner = iota
+    UFL
+    ULB
+    UBR
+    DFR
+    DLF
+    DBL
+    DRB
+)
+
+const (
+    UR Edge = iota
+    UF
+    UL
+    UB
+    DR
+    DF
+    DL
+    DB
+    FR
+    FL
+    BL
+    BR
 )
 
 const (
