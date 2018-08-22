@@ -3,6 +3,7 @@ package kociemba
 type (
 	Corner  int
 	Edge    int
+	Face    int
 	Facelet int
 )
 
@@ -30,6 +31,15 @@ const (
 	FL
 	BL
 	BR
+)
+
+const (
+	U Face = iota
+	R
+	F
+	D
+	L
+	B
 )
 
 const (
