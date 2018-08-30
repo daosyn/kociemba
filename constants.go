@@ -1,3 +1,5 @@
+// define constants
+
 package kociemba
 
 type (
