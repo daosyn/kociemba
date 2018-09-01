@@ -1,7 +1,10 @@
 package kociemba
 
+import "fmt"
 // use "is carried to" representation
 
 func permuteFace(face []Facelet) []Facelet {
-    return nil
+    for _, color := range face {
+       fmt.Println(color) 
+    }
 }
