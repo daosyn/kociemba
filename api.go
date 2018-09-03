@@ -40,6 +40,7 @@ func NewScramble() []string {
 // represented as a string of U, D, F, B, R, L,
 // returns a solution
 func Solve(scramble string) string {
-	solution := scramble
-	return solution
+	var cube = convert(scramble)
+	cube = reduce(cube)
+	return complete(cube)
 }
