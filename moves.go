@@ -1,6 +1,10 @@
 // define movements of the cube
 package kociemba
 
+var CornerMove = [6][8]Corner{
+	{},
+}
+
 // represents the physical turns of each side
 // moves in the order of: U, R, F, D, L, B
 var FaceMove = [6][54]Facelet{
