@@ -3,10 +3,12 @@
 package kociemba
 
 type (
-	Corner  int
-	Edge    int
-	Face    int
-	Facelet int
+	Corner            int
+	CornerOrientation int
+	Edge              int
+	EdgeOrientation   int
+	Face              int
+	Facelet           int
 )
 
 const (
@@ -18,6 +20,12 @@ const (
 	DLF
 	DBL
 	DRB
+)
+
+const (
+	CornerOriented CornerOrientation = iota
+	CornerCW
+	CornerCCW
 )
 
 const (
@@ -33,6 +41,11 @@ const (
 	FL
 	BL
 	BR
+)
+
+const (
+	EdgeOriented EdgeOrientation = iota
+	EdgeFlipped
 )
 
 const (
