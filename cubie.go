@@ -4,5 +4,5 @@ func multiplyCorners(a, b Corner, aO, aB CornerOrientation) (Corner, CornerOrien
 	orien := 0
 	for co := 0; co < 6; co++ {
 	}
-	return Corner(co), CornerOrientation(orien)
+	return Corner(orien), CornerOrientation(orien)
 }
