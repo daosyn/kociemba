@@ -13,10 +13,13 @@ var defaultcube = [54]Facelet{
 
 func TestPermuteFace(t *testing.T) {
 	t.Log("turning each face four times should result in the original state")
-	permuteFace(permuteFace(permuteFace(permuteFace(defaultcube, U), U), U), U)
-	permuteFace(permuteFace(permuteFace(permuteFace(defaultcube, R), R), R), R)
-	permuteFace(permuteFace(permuteFace(permuteFace(defaultcube, F), F), F), F)
-	permuteFace(permuteFace(permuteFace(permuteFace(defaultcube, D), D), D), D)
-	permuteFace(permuteFace(permuteFace(permuteFace(defaultcube, L), L), L), L)
-	permuteFace(permuteFace(permuteFace(permuteFace(defaultcube, B), B), B), B)
+    for i := 0; i < 6; i++ {
+        testcube := defaultcube
+        for turns := 0; turns < 4; turns++ {
+            testcube = permuteFace(testcube, Face(i))
+        }
+        if testcube != defaultcube {
+            t.Fail()
+        }
+    }
 }
