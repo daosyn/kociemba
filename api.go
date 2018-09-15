@@ -1,15 +1,13 @@
-// exposes public functions
-
+/*
+Package kociemba implements the famous two-phase algorithm.
+*/
 package kociemba
 
 import (
 	"math/rand"
 )
 
-// ideally, this function would put a solved cube
-// into a random state and then solve it, providing
-// the reverse of the solution as the scramble
-// TODO: implement kociemba algorithm
+// NewScramble returns a random state of the Rubik's Cube.
 func NewScramble() []string {
 	var mod = [3]string{"", "'", "2"}
 	var x = [2]string{"R", "L"}
@@ -36,9 +34,7 @@ func NewScramble() []string {
 	return s
 }
 
-// given a cube in a random state,
-// represented as a string of U, D, F, B, R, L,
-// returns a solution
+// Solve returns a string of moves that solves the provided scramble.
 func Solve(scramble string) string {
 	var cube = convert(scramble)
 	cube = reduce(cube)

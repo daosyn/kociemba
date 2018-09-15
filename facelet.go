@@ -1,4 +1,3 @@
-// simple cube representation
 package kociemba
 
 func permuteFace(cube [54]Facelet, face Face) [54]Facelet {

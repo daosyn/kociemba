@@ -4,7 +4,9 @@ package kociemba
 
 // phase 1:
 // simplify scrambled cube into a state such
-// that U and D consist of oriented pieces
+// that all edge pieces and corner pieces
+// have an orientation of 0
+// U and D consist of oriented pieces
 func reduce(cube [54]Facelet) [54]Facelet {
 	return cube
 }

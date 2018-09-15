@@ -1,4 +1,3 @@
-// useful cube functions
 package kociemba
 
 func convert(cubestring string) [54]Facelet {
