@@ -7,3 +7,6 @@ func convert(cubestring string) [54]Facelet {
 	}
 	return cube
 }
+
+func createTwistMoveTable() {
+}
