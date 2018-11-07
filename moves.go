@@ -1,5 +1,8 @@
 package kociemba
 
+// TwistMove is a farce.
+var TwistMove = [2]int{}
+
 // CornerMove represents how each turn affects the orientation of the corners.
 var CornerMove = [6][8]Corner{
 	{},

@@ -1,5 +1,26 @@
 package kociemba
 
+/*
+ 	N_TWIST = 2187  # 3^7 possible corner orientations
+    N_FLIP = 2048   # 2^11 possible edge flips
+    N_SLICE1 = 495  # 12 choose 4 possible positions of FR,FL,BL,BR edges
+    N_SLICE2 = 24   # 4! permutations of FR,FL,BL,BR edges in phase2
+    N_PARITY = 2    # 2 possible corner parities
+    N_URFtoDLF = 20160  # 8!/(8-6)! permutation of URF,UFL,ULB,UBR,DFR,DLF corners
+    N_FRtoBR = 11880    # 12!/(12-4)! permutation of FR,FL,BL,BR edges
+    N_URtoUL = 1320     # 12!/(12-3)! permutation of UR,UF,UL edges
+    N_UBtoDF = 1320     # 12!/(12-3)! permutation of UB,DR,DF edges
+    N_URtoDF = 20160    # 8!/(8-6)! permutation of UR,UF,UL,UB,DR,DF edges in phase2
+
+    N_URFtoDLB = 40320  # 8! permutations of the corners
+    N_URtoBR = 479001600    # 8! permutations of the corners
+
+    N_MOVE = 18
+*/
+var maxTwists = 2187
+var maxFlips = 2048
+var moves = 18
+
 type (
 	// Corner represents one of the eight corners of the cube.
 	Corner int

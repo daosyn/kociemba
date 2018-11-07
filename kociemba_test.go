@@ -2,6 +2,6 @@ package kociemba
 
 import "testing"
 
-func Test() {
+func Test(t *testing.T) {
 
 }
